@@ -1,17 +1,18 @@
 # Car Insurance Website
-### Practice of the Javascript, HTML, CSS, Tailwind CSS
+### Practice of the Javascript, HTML, Tailwind CSS
 
 ## Description & Functionality
 * using js prototypes, interface
 * dynamically generating html elements and messages
+* simulated loader of the data
 
 ## Screenshot
 >Final Online Website Screenshot
-<!-- ![here](/img/screenshots/screenshot.png) -->
+![here](/screenshots/screenshot.png)
 
 ## Online Link
-<!-- [github Pages Link](https://tiborkopca.github.io/Sobrasadaworld2024/) -->
+[github Pages Link](https://tiborkopca.github.io/Javascript2024-Car-Insurance/)
 
 ## Authors
 
-- [@TiborKopca](https://tiborkopca.github.io/Sobrasadaworld2024/)
+- [@TiborKopca](https://github.com/TiborKopca)

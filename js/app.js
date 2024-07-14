@@ -74,7 +74,7 @@ Interfaz.prototype.mostrarMensaje = function(mensaje, tipo) {
      }, 3000);
 } 
 
-// Imprime el resultado de la cotización
+//PRINTS THE RESULT OF THE INCURANCE CALCULATION
 Interfaz.prototype.mostrarResultado = function(seguro, total) {
      const resultado = document.querySelector('#resultado');
      let marca;
@@ -89,18 +89,18 @@ Interfaz.prototype.mostrarResultado = function(seguro, total) {
                marca = 'European';
                break;
      }
-     // Crear un div
+     //CREATE A CONTAINER DIV
      const div = document.createElement('div');
      div.classList.add('mt-10')
-     // Insertar la informacion
+     //INJECT THE INFORMATION
      div.innerHTML = `
           <p class='header'>Tu Resumen: </p>
-          <p class="font-bold">Marca: <span class="font-normal"> ${marca} </span> </p>
-          <p class="font-bold">Año: <span class="font-normal"> ${seguro.anio} </span> </p>
-          <p class="font-bold">Tipo: <span class="font-normal"> ${seguro.tipo} </span> </p>
-          <p class="font-bold"> Total: <span class="font-normal"> $ ${total} </span> </p>
+          <p class="font-bold">Manufacturer: <span class="font-normal"> ${marca} </span> </p>
+          <p class="font-bold">Year: <span class="font-normal"> ${seguro.anio} </span> </p>
+          <p class="font-bold">Policy Type: <span class="font-normal"> ${seguro.tipo} </span> </p>
+          <p class="font-bold">Total: <span class="font-normal"> $ ${total} </span> </p>
      `;
-
+     //LOADING SPINNER
      const spinner = document.querySelector('#cargando');
      spinner.style.display = 'block';
      setTimeout( () =>  {
@@ -154,6 +154,7 @@ formulario.addEventListener('submit', e =>  {
      } else {
           //CLEAR PREVIOUS RESULTS
           const resultados = document.querySelector('#resultado div');
+          //the first time loaded, the result will be null
           if(resultados != null) {
                resultados.remove();
           }
@@ -169,4 +170,3 @@ formulario.addEventListener('submit', e =>  {
      }
 
 });
-
